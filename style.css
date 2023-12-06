@@ -33,7 +33,7 @@
     margin: -75px 0 0 -75px;
     border-radius: 50%;
     border: 3px solid transparent;
-    border-top-color: #3498db;
+    border-top-color: #bc6b2c;
     -webkit-animation: spin 2s linear infinite;
             animation: spin 2s linear infinite;
     z-index: 99999;
@@ -47,7 +47,7 @@
     bottom: 5px;
     border-radius: 50%;
     border: 3px solid transparent;
-    border-top-color: #e74c3c;
+    border-top-color: #a35b21;
     -webkit-animation: spin 3s linear infinite;
             animation: spin 3s linear infinite;
   }
@@ -60,7 +60,7 @@
     bottom: 15px;
     border-radius: 50%;
     border: 3px solid transparent;
-    border-top-color: #f9c922;
+    border-top-color: #72421c;
     -webkit-animation: spin 1.5s linear infinite;
             animation: spin 1.5s linear infinite;
   }
@@ -115,9 +115,11 @@
   .loaded #loader {
     opacity: 0;
   }
-body, html{
-  height: 100%;
-}
+  body, html{
+    height: 100%;
+  }
+
+/* PARALAX: */
 
 @import "https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap";
 
@@ -136,6 +138,7 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  filter: grayscale(30%);
 
   /*  this is where the magic happens:  */
   background-attachment: fixed;
@@ -143,8 +146,8 @@ body {
   background-image: url(https://www.thedrive.com/content/2019/01/2019audiq8-e1548703670363.jpg?quality=85);
   background-position: center;
   background-size: cover;
-  color: var(--color);
-  row-gap: 4rem;
+  color: white;
+  row-gap: 3rem;
 
   text-align: center;
 }
@@ -165,7 +168,9 @@ body {
 }
 
 h1 {
-  font-size: 3rem;
+  padding-bottom: 10rem;
+  filter: opacity(0.7);
+  font-size: 20rem;
   font-weight: 700;
 }
 
@@ -235,4 +240,10 @@ h3 {
 }
 .image2{
   background-image: url("https://www.carpixel.net/w/e4c3f1ad386053337611a3b60d6d97fe/audi-q8-s-line-car-wallpaper-79387.jpg");
+}
+
+/* PARALLAX SLIDES */
+.firstQuote{
+  font-size: 5rem;
+  text-align: left-center;
 }
