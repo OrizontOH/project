@@ -156,6 +156,7 @@ body {
   width: 100%;
   min-height: 60vh;
   background-color: var(--color);
+  text-align: center;
 }
 
 .parallax-container2 {
@@ -244,6 +245,29 @@ h3 {
 
 /* PARALLAX SLIDES */
 .firstQuote{
-  font-size: 5rem;
-  text-align: left-center;
+  font-size: 7rem;
+  text-align: center;
+  color: white;
+  font-family: 'Roboto Mono', monospace;
+}
+
+#firstQuoteBy{
+  font-size: 3rem;
+  text-align: right;
+  padding: 50px;
+  display: block;
+}
+
+.fancy {
+  @supports (background-clip: text) or (-webkit-background-clip: text) {
+    background-image: 
+      url("https://www.thedrive.com/content/2019/01/2019audiq8-e1548703670363.jpg?quality=85");
+    background-size: 110% auto;
+    background-position: center;
+    background-attachment: fixed;
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    font-size: 14rem;
+  }
 }
